@@ -15,15 +15,17 @@ int main()
 		{
 			for (int j = 1; j < i; j++)
 			{
-				if (i%j==0)
+				if (i % j == 0)
 				{
-					n=cont++;
+					cont++;
 				}
 			}
-			if (cont == 0)
+			if (cont == 1)
 			{
-				cout << i;
+				cout << i<<" ";
+				cont = 0;
 			}
+			cont = 0;
 		}
 	}
 	else if (selection == 2)
